@@ -9,4 +9,20 @@ def sales_reports(log_file): # Defines a function called 'sales_reports' which h
             print(line)     # Print line
 
 
-sales_reports(log_file) # Invoke function
+# sales_reports(log_file) # Invoke function
+
+
+
+# EXTRA CREDIT #
+
+
+def over_10_melons (file):
+    for line in file:
+        line = line.rstrip().split(' ')
+        if int(line[2]) > 10:
+            print(' '.join(line))
+
+
+
+
+over_10_melons(log_file)
